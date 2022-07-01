@@ -1,0 +1,24 @@
+package principal;
+
+import java.util.Scanner;
+
+import principall.MudaPalavra;
+
+public class Principalll {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Entre com a frase desejada:");
+        String txt = scan.nextLine();
+
+        MudaPalavra muda = new MudaPalavra(txt);
+        int quantidade = muda.getQtd();
+        muda.empty();
+
+        for (int i = 0; i < quantidade; i++) {
+            System.out.print(muda.getElementos() + " ");
+        }
+    }
+    
+}
